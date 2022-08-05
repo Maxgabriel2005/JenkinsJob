@@ -22,6 +22,16 @@ public class LoginTest extends BaseTest{
 		LoginPage loginPage =  new LoginPage(driver);
 		loginPage.loginInApp(username, password);
 		
+	}
+		
+	@Test
+	public void loginTest2(String username, String password) {
+			NavigationMenuPage navMenu = new NavigationMenuPage(driver);
+			navMenu.navigateTo(navMenu.loginLink);
+			//assertTrue(false);
+			LoginPage loginPage =  new LoginPage(driver);
+			loginPage.loginInApp("abc", "abc");
+		
 		
 	}
 
